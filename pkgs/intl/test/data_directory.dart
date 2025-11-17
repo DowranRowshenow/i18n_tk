@@ -11,8 +11,10 @@
 ///   run things by default
 library;
 
+import 'dart:convert';
 import 'dart:io';
 import 'package:path/path.dart' as path;
+import 'package:collection/collection.dart'; // For efficient comparison
 
 String get dataDirectory {
   return path.join(intlDirectory, datesRelativeToIntl);
@@ -23,7 +25,15 @@ String get dataDirectory {
 bool _isIntlRoot(String dir) {
   var file = File(path.join(dir, 'pubspec.yaml'));
   if (!file.existsSync()) return false;
-  return file.readAsStringSync().contains('name: intl\n');
+
+  // Read the first line and trim any whitespace, including \r, \n, and spaces.
+  String firstLine = file.readAsLinesSync().first.trim();
+
+  // Check if the trimmed first line exactly matches the expected package name definition.
+  const expectedDefinition = 'name: intl';
+
+  // Instead of contains('name: intl\n'), use exact equality:
+  return firstLine == expectedDefinition;
 }
 
 String get intlDirectory {

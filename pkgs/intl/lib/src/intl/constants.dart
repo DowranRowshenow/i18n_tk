@@ -90,6 +90,7 @@ final Map<String, String> simpleCurrencySymbols = {
   'MDL': 'MDL',
   'RON': 'RON',
   'BGN': 'lev',
+  'TMT': 'm',
   'SZL': 'SZL',
   'TRY': '\u20BA',
   'LTL': 'Lt',

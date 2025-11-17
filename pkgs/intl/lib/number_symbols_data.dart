@@ -1973,6 +1973,24 @@ Map<String, NumberSymbols> numberFormatSymbols = <String, NumberSymbols>{
       PERCENT_PATTERN: '#,##0%',
       CURRENCY_PATTERN: '\u00A4#,##0.00',
       DEF_CURRENCY_CODE: 'THB'),
+  // Number formatting symbols for locale tr.
+  "tk": new NumberSymbols(
+      NAME: "tk",
+      DECIMAL_SEP: ',',
+      GROUP_SEP: '.',
+      PERCENT: '%',
+      ZERO_DIGIT: '0',
+      PLUS_SIGN: '+',
+      MINUS_SIGN: '-',
+      EXP_SYMBOL: 'E',
+      PERMILL: '\u2030',
+      INFINITY: '\u221E',
+      NAN: 'NaN',
+      DECIMAL_PATTERN: '#,##0.###',
+      SCIENTIFIC_PATTERN: '#E0',
+      PERCENT_PATTERN: '%#,##0',
+      CURRENCY_PATTERN: '\u00A4#,##0.00',
+      DEF_CURRENCY_CODE: 'TMT'),
   // Number formatting symbols for locale tl.
   "tl": new NumberSymbols(
       NAME: "tl",

@@ -604,6 +604,7 @@ final pluralRules = {
   'ta': _af_rule,
   'te': _af_rule,
   'th': _default_rule,
+  'tk': _af_rule,
   'tl': _ceb_rule,
   'tr': _af_rule,
   'uk': _ru_rule,
